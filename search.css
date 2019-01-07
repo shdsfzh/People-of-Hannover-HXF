@@ -1,0 +1,153 @@
+* {/*四周都无margin，相当于居中了*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: #f3f3f5;
+}
+
+/* set up font-family for the whole page*/
+div.searchBlock {
+    height: auto; /* the whole search page*/
+    margin: 10px;
+    padding: 24px 0px 0px 150px;    
+    text-align:center;
+}
+
+#typeSearch { /* type search */
+    width: 300px;
+    border: 10px;
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#typeSearch_text {
+    font-size: 15px;
+    width: 200px; /* type search text area */
+    margin: 4px;
+    height: 32px;
+    background: #1f7f5c;
+    float: left;
+    transition: all 0.1s;
+}
+::-moz-placeholder {color: white;}
+::-webkit-input-placeholder {color: white;}
+:-ms-input-placeholder {color: white;}
+
+    #typeSearch_text:focus {background: yellow;}
+
+#typeSearch_button {
+    background: #1f7f5c url(search.png) center no-repeat;
+    width: 50px;
+    float: left;
+    padding: 10px;
+    height: 38px;
+    cursor: pointer;
+    text-align: center;
+}
+
+div.filter {
+    width: 500px;
+    height: 130px;
+    padding:10px 0 10px 0;
+    border-width:1px 0 1px 0;
+    border-style:solid;
+}
+
+.typCheck {
+    width: 440px;
+    list-style-type: none;
+    height: 30px;
+    margin-left: 60px;
+    padding: 0;
+}
+
+    .typCheck li {
+        margin: 0 10px;
+        float: left;
+        width: 25%;
+    }
+
+input[type=checkbox] {
+    zoom: 150%;
+    vertical-align: middle;
+}
+
+div.addWord { /*为什么这两个框width都是500px但就是不一样宽啊*/
+    width: 500px;
+    height: auto;
+    padding-top: 10px;
+    border-width:1px 0 1px 0;
+    border-style:solid;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    width:80px;
+}
+
+.dropbtn {
+    height:30px;
+    background-color: #1f7f5c;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+}
+
+.dropdown-content {/*为什么dropdown的字号调不了*/
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size:12px;
+}
+
+    .dropdown-content a {
+        padding: 5px 8px;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+    }
+
+.dropdown:hover .dropdown-content { /*定义的是hover状态下的style*/
+    display: block;
+}
+
+.showBox {
+    display: flex;
+    justify-content: space-around;
+    min-width: 1000px;
+    height:auto;
+    border-top:1px solid black;
+    padding-top:10px
+}
+
+div.picBox {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+    div.picBox:hover {
+        border: 1px solid #777;
+    }
+
+    div.picBox img {
+        width: 80%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.fl-lf{float:left;}.ta-c{text-align:center;}.b-d{border:dashed;}
+.m0{margin:0;padding:0;}.p0 {padding:0}.pl20 {padding-left: 20px}
+.w1200 {width: 1200px;}.w1000{width:1000px;}.w160 {width:160px;}.w80{width:80px;}
