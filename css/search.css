@@ -1,4 +1,4 @@
-* {/*ËÄÖÜ¶¼ÎŞmargin£¬Ïàµ±ÓÚ¾ÓÖĞÁË*/
+* {/*å››å‘¨éƒ½æ— marginï¼Œç›¸å½“äºå±…ä¸­äº†*/
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -40,7 +40,7 @@ div.searchBlock {
     #typeSearch_text:focus {background: yellow;}
 
 #typeSearch_button {
-    background: #1f7f5c url(search.png) center no-repeat;
+    background: #1f7f5c url(img/search.png) center no-repeat;
     width: 50px;
     float: left;
     padding: 10px;
@@ -76,7 +76,7 @@ input[type=checkbox] {
     vertical-align: middle;
 }
 
-div.addWord { /*ÎªÊ²Ã´ÕâÁ½¸ö¿òwidth¶¼ÊÇ500pxµ«¾ÍÊÇ²»Ò»Ñù¿í°¡*/
+div.addWord { /*ä¸ºä»€ä¹ˆè¿™ä¸¤ä¸ªæ¡†widthéƒ½æ˜¯500pxä½†å°±æ˜¯ä¸ä¸€æ ·å®½å•Š*/
     width: 500px;
     height: auto;
     padding-top: 10px;
@@ -99,7 +99,7 @@ div.addWord { /*ÎªÊ²Ã´ÕâÁ½¸ö¿òwidth¶¼ÊÇ500pxµ«¾ÍÊÇ²»Ò»Ñù¿í°¡*/
     border: none;
 }
 
-.dropdown-content {/*ÎªÊ²Ã´dropdownµÄ×ÖºÅµ÷²»ÁË*/
+.dropdown-content {/*ä¸ºä»€ä¹ˆdropdownçš„å­—å·è°ƒä¸äº†*/
     display: none;
     position: relative;
     background-color: #f1f1f1;
@@ -115,7 +115,7 @@ div.addWord { /*ÎªÊ²Ã´ÕâÁ½¸ö¿òwidth¶¼ÊÇ500pxµ«¾ÍÊÇ²»Ò»Ñù¿í°¡*/
         font-size: 12px;
     }
 
-.dropdown:hover .dropdown-content { /*¶¨ÒåµÄÊÇhover×´Ì¬ÏÂµÄstyle*/
+.dropdown:hover .dropdown-content { /*å®šä¹‰çš„æ˜¯hoverçŠ¶æ€ä¸‹çš„style*/
     display: block;
 }
 
