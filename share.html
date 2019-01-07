@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>People of Hannover</title>
+    <link rel="stylesheet" href="css/title.css">
+    <style>
+    #sharetitle{font-size: 40px;}
+    .NE{border: 2px solid black;}
+    #allinput{margin-top: 20px; font-size: 20px; line-height: 50px; position: relative; z-index: 0;}
+    #label{margin-left: 20px; font-size: 15px; font-weight: 500;}
+    #remind {font-size: 15px; font-weight: 500;}
+    #Discription{height: 300px; width: 700px; border: 2px solid black;}
+    #tworemind{float: left; font-size: 15px; font-weight: 500; margin-bottom: 20px;}
+    #submitbutton{height: 40px; width: 100px; position:absolute; right: 0px; font-size: 20px; margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+    <div style="height: 200px;">
+        <div style="height: 130px; text-align: center;">
+            <img src="img/Logo.png" style="display: inline-block; height: 80px; width:750px; padding-top: 30px;"/>
+        </div>
+        <div style="text-align: center; position: relative; z-index: 1;">
+            <ul class="nav">
+                <li><a href="Home.html">Home</a></li>
+                <li id="stories"><a href="Life.html">Stories</a>
+                    <ul class="subnav">
+                        <li><a href="Life.html">Life</a></li>
+                        <li><a href="Study.html">Study</a></li>
+                        <li><a href="Work.html">Work</a></li>
+                    </ul>
+                </li>
+                <li><a href="share.html">Share yourself</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li id="search">
+                    <form action="" method="get">
+                        <input type="text" name="search_text" id="search_text" placeholder="Search">
+                        <input type="button" name="search_button" id="search_button">
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <div style="width:700px; margin: 20px auto; position: relative;">
+           <h1 id="sharetitle">Share your story<h1>
+              <form action="#" method="post">
+                 <p id="allinput">
+                    Name
+                    <input class="NE" type="text" name="Name" required=""/></br>
+                    Email
+                    <input class="NE" type="text" name="Email" required=""/></br>
+                    Label
+                    <span id="label">
+                        <input id="life" type="checkbox" name="Life" value="Life"/>
+                        <label for="life">Life</label>
+                        <input id="study" type="checkbox" name="Study" value="Study"/>
+                        <label for="study">Study</label>
+                        <input id="work" type="checkbox" name="Work" value="Work"/>
+                        <label for="work">Work</label>
+                    </span>
+                </br>
+                Photo/Video
+                <input id="upload" type="file" name="upload" value="upload"/>
+                <span id="remind">(No more than 500MB)</span></br>
+                Discription</br>
+                <textarea name="Discription" id="Discription" required=""></textarea>
+            </p>
+            <p id="tworemind">
+             <input id="Reprint" type="checkbox" name="Reprint" value="Reprint" checked="checked"/>
+             <label for="Reprint">Reprint allowed</label></br>
+             <input id="Comment" type="checkbox" name="Comment" value="Comment" checked="checked"/>
+             <label for="Comment">Comment allowed</label>
+         </p>
+         <input type="submit" value="submit" id="submitbutton"/>
+     </form>
+ </div>
+</body>
+</html>

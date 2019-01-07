@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>People of Hannover</title>
+	<link rel="stylesheet" href="css/title.css">
+	<style>
+	#weekstory{font-size: 40px;}
+	#weekimg{margin-top: 20px; height: 350px; width: 600px; border:5px solid black; background-color: black;}
+	#weekintroduction{font-size:20px; font-family: "Open Sans", sans-serif; padding-top: 5px; position: absolute; left: 50px;}
+	.three{height: 100px;margin-top: 20px; width: 250px;  border: 1px solid black; background-repeat:no-repeat; border-radius: 4px; box-shadow: 0 4px 0 #9cb8d8, 0 3px 20px rgba(0,0,0,0.3); cursor: pointer;}
+	#life{background: url(img/life.png);}
+	#study{background: url(img/study.png);}
+	#work{background: url(img/work.png);}
+	.three:active{box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset; position: relative; top: 3px}
+	</style>
+</head>
+<body>
+	<div style="height: 200px;">
+		<div style="height: 130px; text-align: center;">
+			<img src="img/Logo.png" style="display: inline-block; height: 80px; width:750px; padding-top: 30px;"/>
+		</div>
+		<div style="text-align: center; position: relative; z-index: 1;">
+			<ul class="nav">
+				<li><a href="Home.html">Home</a></li>
+                <li id="stories"><a href="Life.html">Stories</a>
+					<ul class="subnav">
+						<li><a href="Life.html">Life</a></li>
+						<li><a href="Study.html">Study</a></li>
+						<li><a href="Work.html">Work</a></li>
+					</ul>
+				</li>
+				<li><a href="share.html">Share yourself</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contactus.html">Contact us</a></li>
+				<li id="search">
+					<form action="" method="get">
+						<input type="text" name="search_text" id="search_text" placeholder="Search">
+						<input type="button" name="search_button" id="search_button">
+					</form>
+				</ul>
+			</div>
+		</div>
+		<div style="width: 1000px; padding-top: 20px; margin:0 auto;">
+			<div style="height: 500px; width:700px; float: left; position: relative; text-align: center; z-index: 0;">
+				<h1 id="weekstory">Story of the week</h1>
+				<video id="weekimg" controls="controls"> <source src="Group1_Marco/interview.mp4"/></video>
+				<p id="weekintroduction">Marco is a about 40-years-old man originally from Kassel.</p>
+			</div>
+			<div style="width:300px; float: left; text-align: center; padding-top: 60px;">
+				<input type="button" class="three" id="life" onclick="javascript:window.open('Life.html')"/>
+				<input type="button" class="three" id="study" onclick="javascript:window.open('Study.html')"/>
+				<input type="button" class="three" id="work" onclick="javascript:window.open('Work.html')"/>
+			</div>
+		</div>
+	</body>
+	</html>
