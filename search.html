@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>people of hannover:search page</title>
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/title.css">
+    <script type="text/javascript">
+        function hidetext() {
+            var mychar = document.getElementById("filter").style.display = "none";
+        }
+        function showtext() {
+            var mychar = document.getElementById("filter").style.display = "block";
+        }
+        //checkbox function example
+        function cbox_v(checkbox) {
+            if (checkbox.checked == true) {
+                var mychar = document.getElementById("videoBox").style.display = "flex";  //Action for checked
+            } else {
+                var mychar = document.getElementById("videoBox").style.display = "none";  //Action for not checked
+            }
+        }
+        function cbox_p(checkbox) {
+            if (checkbox.checked == true) {
+                var mychar = document.getElementById("picBox").style.display = "flex";  //Action for checked
+            } else {
+                var mychar = document.getElementById("picBox").style.display = "none";  //Action for not checked
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="height: 200px;">
+        <div style="height: 130px; text-align: center;">
+            <img src="img/Logo.png" style="display: inline-block; height: 80px; width: 750px; padding-top: 30px;" />
+        </div>
+        <div style="text-align: center;">
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li id="stories">
+                    <a href="">Stories</a>
+                    <ul class="subnav">
+                        <li><a href="">Life</a></li>
+                        <li><a href="">Study</a></li>
+                        <li><a href="">Work</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Share yourself</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact us</a></li>
+                <li id="search">
+                    <form action="" method="get">
+                        <input type="text" name="search_text" id="search_text" placeholder="Search">
+                        <input type="button" name="search_button" id="search_button">
+                    </form>
+            </ul>
+        </div>
+    </div>
+    <div class="searchBlock">
+        <div style="padding-top:20px">
+            <form class="fl-lf" action="" method="get" style="display:inline-block; margin:20px 0 20px 0;">
+                <input type="text" name="search_text" id="typeSearch_text" placeholder="Search" />
+                <input type="button" name="search_button" id="typeSearch_button" />
+            </form>
+            <br><br>
+            <div style="text-align:center; width:80px;">
+                <strong>Filter</strong>
+                <br><br>
+                <form>
+                    <input type="button" onclick="hidetext()" value="hide" />
+                    <input type="button" onclick="showtext()" value="show" />
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="filter" id="filter" style="display:none">
+            <span class="fl-lf" style="width:60px">Modul:</span>
+            <ul class="typCheck">
+                <li>
+                    <span>Life</span>
+                    <input type="checkbox" onclick="checkboxOnclick(this)" />
+                </li>
+                <li>
+                    <span>Study</span>
+                    <input type="checkbox" onclick="checkboxOnclick(this)" />
+                </li>
+                <li>
+                    <span>Work</span>
+                    <input type="checkbox" onclick="checkboxOnclick(this)" />
+                </li>
+            </ul>
+            <br><br><br>
+            <span class="fl-lf" style="width:60px;">Type:</span>
+            <ul class="typCheck">
+                <li>
+                    <span>Video</span>
+                    <input type="checkbox" onclick="cbox_v(this)" />
+                </li>
+                <li style="width:150px; padding-left:30px">
+                    <span>Picture & Plain text</span>
+                    <input type="checkbox" onclick="cbox_p(this)" />
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div class="addWord">
+            <p class="fl-lf" style="width:150px;">Add etra keywords</p>
+            <br><br>
+            <ul class="typCheck">
+                <li>
+                    <span>keyword 1</span>
+                    <input type="checkbox" onclick="checkboxOnclick(this)" />
+                <li>
+                    <span>keyword 2</span>
+                    <input type="checkbox" onclick="checkboxOnclick(this)" />
+            </ul>
+        </div>
+        <br><br>
+        <div class="w1200 m0p0 ta-c">
+            <p class="fl-lf w160">About xxx articles</p>
+            <br><br>
+            <div class="dropdown fl-lf">
+                <button class="dropbtn">sort by</button>
+                <div class="dropdown-content">
+                    <a href="#">latest</a>
+                    <a href="#">most liked</a>
+                    <a href="#">most viewed</a>
+                </div>
+            </div><br><br><br>
+            <p class="fl-lf pl20">related videos</p>
+            <br><br>
+            <div class="showBox" id="videoBox">
+                <video width="300" height="200" controls>
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video width="300" height="200" controls>
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video width="300" height="200" controls>
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <br><br>
+            <p class="fl-lf pl20">related pictures and text</p>
+            <br><br>
+            <div class="showBox" id="picBox">
+                <div class="picBox">
+                    <a href="#">
+                        <img src="img/pikachu.png" width="300" height="200" />
+                    </a>
+                    <div class="desc">short desciption</div>
+                </div>
+                <div class="picBox b-d">
+                    <a href="#">
+                        <img src="img/pikachu.png" alt="pic1" width="300" height="200" />
+                    </a>
+                    <div class="desc">short desciption</div>
+                </div>
+                <div class="picBox b-d">
+                    <a href="#">
+                        <img src="img/pikachu.png" alt="pic1" width="300" height="200" />
+                    </a>
+                    <div class="desc">short desciption</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
